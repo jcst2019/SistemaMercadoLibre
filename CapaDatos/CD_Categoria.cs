@@ -17,7 +17,7 @@ namespace CapaDatos
             try
             {
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cn)) {
-                    string query = "select IdCategoria,Descripcion  from categoria";
+                    string query = "select IdCategoria,Descripcion, Activo  from categoria";
                     SqlCommand cmd = new SqlCommand(query, oconexion);
                     cmd.CommandType = CommandType.Text;
                     oconexion.Open();
@@ -26,7 +26,8 @@ namespace CapaDatos
                             lista.Add(new Categoria()
                             {
                                 IdCategoria = Convert.ToInt32(dr["IdCategoria"]),
-                                Descripcion = dr["Descripcion"].ToString()
+                                Descripcion = dr["Descripcion"].ToString(),
+                                Activo = Convert.ToBoolean(dr["Activo"])
 
                             });
          
