@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Categoria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Categoria</h2>
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="index.html">Resumen</a></li>
+    <li class="breadcrumb-item active">Categoria</li>
+</ol>
+
+<div class="card">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>Lista de Categorías
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary">Crear Categoría</button>
+            </div>
+        </div>
+        <hr />
+        <table id="tabla" class="display cell-boder" style=" width: 100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+
+    </script>
+
+}
+
+
+

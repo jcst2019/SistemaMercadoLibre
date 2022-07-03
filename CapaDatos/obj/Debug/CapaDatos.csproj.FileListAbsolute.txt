@@ -1,0 +1,9 @@
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\bin\Debug\CapaDatos.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\obj\Debug\CapaDatos.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaDatos\obj\Debug\CapaDatos.pdb

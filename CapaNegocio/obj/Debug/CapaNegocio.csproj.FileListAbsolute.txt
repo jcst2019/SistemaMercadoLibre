@@ -1,0 +1,11 @@
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\bin\Debug\CapaEntidad.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\bin\Debug\CapaEntidad.pdb
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\JCST\maestria\cursos\CalidadSoftware\poyectoFinal\SietemaMercadoLibre\CapaNegocio\obj\Debug\CapaNegocio.pdb
