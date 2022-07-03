@@ -1,28 +1,29 @@
 ﻿
 @{
-    ViewBag.Title = "Categoria";
+    ViewBag.Title = "Almacen";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <br />
-<h2>Categoria</h2>
+<h2>Almacenes</h2>
 
 <ol class="breadcrumb mb-4 mt-4">
     <li class="breadcrumb-item"><a href="index.html">Resumen</a></li>
-    <li class="breadcrumb-item active">Categoria</li>
+    <li class="breadcrumb-item active">Almacenes</li>
 </ol>
 
 <div class="card">
     <div class="card-header">
-        <i class="fas fa-table me-1"></i>Lista de Categorías
+        <i class="fas fa-building me-1"></i>Lista de Almacenes
     </div>
     <div class="card-body">
         <div class="row">
             <div class="col-12">
-                <button type="button" class="btn btn-primary" onclick="abrirModal()">Crear Categoría</button>
+                <button type="button" class="btn btn-primary" onclick="abrirModal()">Crear Almacén</button>
             </div>
         </div>
         <hr />
-        <table id="tablaCategoria" class="display cell-boder" style=" width: 100%">
+        <table id="tablaAlmacen" class="display cell-boder" style=" width: 100%">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -36,11 +37,11 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="FrmModalCategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="FrmModalAlmacen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header bg-dark text-white">
-                <h5 class="modal-title" id="exampleModalLabel">Categoría</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Almacén</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -69,7 +70,7 @@
         var tablaData;
 
         jQuery.ajax({
-            url: '@Url.Action("ListaCategorias", "Categoria")',
+            url: '@Url.Action("ListaAlmacenes", "Almacen")',
             type: "GET",
             dataType: "json",
             contentType: "aplication/json; charset-utf8",
@@ -79,16 +80,16 @@
             }
         })
 
-        tablaData = $("#tablaCategoria").DataTable({
+        tablaData = $("#tablaAlmacen").DataTable({
             responsive: true,
             ordering: false,
             "ajax": {
-                url: '@Url.Action("ListaCategorias", "Categoria")',
+                url: '@Url.Action("ListaAlmacenes", "Almacen")',
                 type: "GET",
                 dataType: "json",
             },
             "columns": [
-                { "data": "IdCategoria" },
+                { "data": "IdAlmacen" },
                 { "data": "Descripcion" },
                 {
                     "data": "Activo", "render": function (valor) {
@@ -100,7 +101,7 @@
                     }
                 },
                 {
-                    "defaultContent": '<button type="button" class="btn btn-primary"><i class="fas fa-pen me-1"></i></button>' +
+                    "defaultContent": '<button type="button" class="btn btn-primary btn-editar"><i class="fas fa-pen me-1"></i></button>' +
                         '<button type="button" class="btn btn-danger ms-2"><i class="fas fa-trash me-1"></i></button>',
                     "orderable": false,
                     "searchable": false,
@@ -120,13 +121,20 @@
 
         function abrirModal() {
 
-            $("#FrmModalCategoria").modal("show");
+            $("#FrmModalAlmacen").modal("show");
 
         }
+
+        $("#tablaAlmacen tbody").on("click", '.btn-editar', function () {
+
+            var filaSeleccionada = $(this).closest("tr");
+            var data = tablaData.row(filaSeleccionada).data();
+
+            console.log(data);
+
+        })
 
     </script>
 
 }
-
-
 

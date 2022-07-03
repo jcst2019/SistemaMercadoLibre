@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlmacenController.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MantenedorController.cs" />
@@ -480,9 +481,9 @@
     <Content Include="webfonts\fa-brands-400.ttf" />
     <Content Include="webfonts\fa-brands-400.eot" />
     <Content Include="Views\Home\Usuarios.cshtml" />
-    <Content Include="Views\Categoria\Categoria_old.cshtml" />
     <Content Include="Views\Mantenedor\Producto.cshtml" />
     <Content Include="Views\Categoria\Categoria.cshtml" />
+    <Content Include="Views\Almacen\Almacen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
