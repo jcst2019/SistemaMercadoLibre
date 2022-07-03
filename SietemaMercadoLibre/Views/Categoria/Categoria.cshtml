@@ -3,7 +3,7 @@
     ViewBag.Title = "Categoria";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<br />
 <h2>Categoria</h2>
 
 <ol class="breadcrumb mb-4 mt-4">
@@ -22,7 +22,7 @@
             </div>
         </div>
         <hr />
-        <table id="tabla" class="display cell-boder" style=" width: 100%">
+        <table id="tablaCategoria" class="display cell-boder" style=" width: 100%">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -35,6 +35,40 @@
 
 @section scripts{
     <script>
+        var tablaData;
+
+        jQuery.ajax({
+            url: '@Url.Action("ListaCategorias", "Categoria")',
+            type: "GET",
+            dataType: "json",
+            contentType: "aplication/json; charset-utf8",
+            success: function (data) {
+                //debugger;
+                console.log(data)
+            }
+        })
+
+        tablaData = $("#tablaCategoria").DataTable({
+            responsive: true,
+            ordering: false,
+            "ajax": {
+                url: '@Url.Action("ListaCategorias", "Categoria")',
+                type: "GET",
+                dataType: "json",
+            },
+            "columns": [
+                { "data": "IdCategoria" },
+                { "data": "Descripcion" }
+            ],
+            "language": {
+                url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+            },
+            "buttons": [
+                'copy',
+                'print',
+                'excel'
+            ]
+        });
 
     </script>
 

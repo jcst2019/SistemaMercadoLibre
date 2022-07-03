@@ -15,12 +15,13 @@ namespace SietemaMercadoLibre.Controllers
         {
             return View();
         }
+        [HttpGet]
         public JsonResult ListaCategorias()
         {
 
             List<Categoria> oLista = new List<Categoria>();
             oLista = new CN_Categoria().Listar();
-            return Json(oLista, JsonRequestBehavior.AllowGet);
+            return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
         }
     }
 }

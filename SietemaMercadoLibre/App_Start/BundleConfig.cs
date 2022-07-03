@@ -13,7 +13,9 @@ namespace SietemaMercadoLibre
 
             bundles.Add(new Bundle("~/bundles/complementos").Include(
                    "~/Scripts/scripts.js",
-                   "~/Scripts/fontawesome/all.min.js"));
+                   "~/Scripts/DataTables/jquery.dataTables.js", //dataTables JQUERY
+                   "~/Scripts/DataTables/dataTables.responsive.js", //dataTables JQUERY
+                   "~/Scripts/fontawesome/all.min.js"));//fontawesome
 
             //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
             //            "~/Scripts/jquery.validate*"));
@@ -24,10 +26,14 @@ namespace SietemaMercadoLibre
             //            "~/Scripts/modernizr-*"));
 
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.bundle.js"));
+                      "~/Scripts/bootstrap.bundle.js")); //bootstrap
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/site.css"));
+                      "~/Content/DataTables/css/jquery.dataTables.css",//dataTables JQUERY - CSS
+                      "~/Content/DataTables/css/responsive.dataTables.css",//dataTables JQUERY - CSS
+                      "~/Content/site.css" ));  //fontawesome
+
+
         }
     }
 }
